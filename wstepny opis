@@ -19,3 +19,6 @@ PRZEGLĄD FUNKCJONALNOŚCI TECHNICZNYCH:
 1. logowanie/autentykacja użytkowników na podstawie loginów i haseł z użyciem wbudowanego mechanizmu WinForms
 2. obsługa sesji użytkowników (w oparciu o cookies i wbudowane mechanizmy ASP .NET)
 3. zapobieganie SQLINJECTION poprzez weryfikacje pól formularzy + weryfikację po stronie serwera (tam gdzie będzie to uzasadnione)
+
+
+
