@@ -1,1 +1,21 @@
-Adam Arciechowski
+Adam Arciechowski (altano@wp.pl)
+Celem projektu będzie stworzenie prostej aplikacji umożliwiającej wsparcie procesu Incident Management 
+
+GŁÓWNE ZAŁOŻENIA PROJEKTOWE:
+1. rejestracja zgłoszeń (issues) + prosty issue life cycle (workflow)+ definiowanie podstawowych parametrow issue (m.in severity)
+2. obsługę zgłoszeń przez użytkowników aplikacji pogrupowanych w zespoły
+3. w ramach jednego issue aplikacja umożliwi dodawanie wpisów (comments)
+4. aplikacja umożliwi ryglowanie issue (zablokowanie issue na wyłączność przez jednego użytkownika)
+5. parametry techniczne i merytoryczne będą przechowywane w bazie danych
+6. loginy użytkowników przechowywane w bazie danych
+7. hasła użytkowników będą przechowywane w bazie danych w formie zahashowanej (wybrany algorytm hashowania+salt)
+
+TECHNOLOGIE:
+ASP .NET
+MSSQL lub MySQL (do projektu zostanie dołączony kod tworzący obiekty bazodanowe)
+
+PRZEGLĄD FUNKCJONALNOŚCI TECHNICZNYCH:
+
+1. logowanie/autentykacja użytkowników na podstawie loginów i haseł z użyciem wbudowanego mechanizmu WinForms
+2. obsługa sesji użytkowników (w oparciu o cookies i wbudowane mechanizmy ASP .NET)
+3. zapobieganie SQLINJECTION poprzez weryfikacje pól formularzy + weryfikację po stronie serwera (tam gdzie będzie to uzasadnione)
